@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get -y install build-essential clang valgrind cppcheck dnsutils
+    apt-get -y install build-essential clang valgrind cppcheck dnsutils cmake
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
